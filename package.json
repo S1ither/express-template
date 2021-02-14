@@ -1,0 +1,50 @@
+{
+  "name": "express_server_template",
+  "version": "1.0.0",
+  "main": "dist/server/index.js",
+  "author": {
+    "email": "ophcik@mail.ru",
+    "name": "S1ither",
+    "url": "https://github.com/S1ither"
+  },
+  "scripts": {
+    "build": "npm i typescript yarn -g && tsc && cp ./src/client ./dist/",
+    "start": "node ./dist/server/index.js",
+    "dev": "ts-node ./src/server/index.ts",
+    "test": "mocha --require ts-node/register src/tests/**/*.ts"
+  },
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "chai-http": "^4.3.0",
+    "chalk": "^4.1.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-es6-template-engine": "^2.2.3",
+    "moment": "^2.29.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "mysqldump": "^3.2.0",
+    "node": "^15.0.1",
+    "typeorm": "^0.2.29"
+  },
+  "devDependencies": {
+    "@types/chai-http": "^4.2.0",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.8",
+    "@types/express": "^4.17.8",
+    "@types/mocha": "^8.0.3",
+    "@types/multer": "^1.4.4",
+    "@types/mysql": "^2.15.17",
+    "@types/node": "^14.14.6",
+    "@types/supertest": "^2.0.10",
+    "mocha": "^8.2.1",
+    "supertest": "^6.0.1",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5",
+    "yarn": "^1.22.10"
+  }
+}
